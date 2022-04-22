@@ -13,13 +13,18 @@ public class ExceptionTest01 {
         File file = new File("arquivo\\teste.txt");
 
         try {
-            boolean isCriado = file.createNewFile();
-            System.out.println("Arquivo criado: "+ isCriado);
-
-        }catch (IOException e){
+            boolean isCreate = file.createNewFile();
+            System.out.println("Arquivo criado: "+isCreate);
+        } catch (IOException e) {
             e.printStackTrace();
+            //AVISO DE ERRO-NUNCA DEIXAR EM BRANCO
         }
-
-
     }//method
+
+    /*
+    -NO TRATAMENTO DE EXCEÇÕES RECOMENDA-SE
+    O TRATAMENTO DAS EXCEÇÕES MAIS ESPECIFÍCAS(FILHAS/SUBCLASSE)
+     AO CONTRÁRIO DAS MAIS GENERICAS(SUPERCLASSE/PAI)
+     */
+
 }//class
