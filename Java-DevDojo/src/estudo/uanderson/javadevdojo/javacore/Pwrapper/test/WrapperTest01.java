@@ -12,14 +12,14 @@ public class WrapperTest01 {
         boolean booleanP = false;
 
 
-        byte byteW = 1;
-        short shortW =1;
-        int intW = 1;
-        long longW =10L;
-        float floatW =10F;
-        double doubleW = 10.55;
-        char charW = 'U';
-        boolean booleanW = false;
+        Byte byteW = 1;
+        Short shortW =1;
+        Integer intW = 1;
+        Long longW =10L;
+        Float floatW =10F;
+        Double doubleW = 10.55;
+        Character charW = 'U';
+        Boolean booleanW = false;
 
 
     }//main
