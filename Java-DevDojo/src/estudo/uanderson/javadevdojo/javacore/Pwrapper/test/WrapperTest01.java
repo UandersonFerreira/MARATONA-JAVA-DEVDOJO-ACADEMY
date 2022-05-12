@@ -14,13 +14,15 @@ public class WrapperTest01 {
 
         Byte byteW = 1;
         Short shortW =1;
-        Integer intW = 1;
+        Integer intW = 1;//autoboxing - primitivo para Wrapper
         Long longW =10L;
         Float floatW =10F;
         Double doubleW = 10.55;
         Character charW = 'U';
         Boolean booleanW = false;
 
+        int i = intW;//unboxing - wrapper para primitivo
+        Integer intw2 = Integer.parseInt("20");
 
     }//main
 }//class
