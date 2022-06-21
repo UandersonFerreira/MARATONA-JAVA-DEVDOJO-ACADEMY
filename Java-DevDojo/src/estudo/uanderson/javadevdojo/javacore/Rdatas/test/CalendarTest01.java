@@ -5,8 +5,10 @@ import java.util.Date;
 
 public class CalendarTest01 {
     public static void main(String[] args) {
-        //A classe calendar é do pacote util, e é uma classe abstrata, portanto não é permitido criar um objeto com new(instânciar)
+        //A classe Calendar é do pacote java.util, e é uma classe abstrata,
+        // portanto não é permitido criar um objeto com new(instânciar)
         Calendar calendar = Calendar.getInstance();
+
 
         if (calendar.getFirstDayOfWeek() == Calendar.SUNDAY){
             System.out.println("Domingo é o primeiro dia da semana!");
@@ -21,9 +23,7 @@ public class CalendarTest01 {
         //calendar.add(Calendar.HOUR, 17);// add -> Fri May 20 02:30:25 BRT 2022 altera o dia
         calendar.roll(Calendar.HOUR, 17);// roll -> Thu May 19 02:31:25 BRT 2022 não altera o dia somente as horas no mesmo dia
 
-
         Date date = calendar.getTime();//racking para poder visualizar a data vindo do Calendar melhor
-        System.out.println(date);
-
-        }//main
+        System.out.println("Data Formatada => "+date);
+    }//main
     }//class

@@ -1,4 +1,4 @@
-package estudo.uanderson.javadevdojo.javacore.Rdatas.test;
+package estudo.uanderson.javadevdojo.javacore.Sformatacao.test;
 
 import java.text.DateFormat;
 import java.util.Calendar;
@@ -21,7 +21,9 @@ public class DateFormatTest01 {
             System.out.println(dateFormat.format(calendar.getTime()));
         }
 
-     //   aula 114
-
     }//main
 }//class
+/**
+ * A classe DateFormat é abstrata, portanto não é permitido
+ * instanciar a classe com o new.
+ */
