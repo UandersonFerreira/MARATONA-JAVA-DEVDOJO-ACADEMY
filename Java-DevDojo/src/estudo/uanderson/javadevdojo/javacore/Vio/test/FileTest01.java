@@ -12,17 +12,19 @@ public class FileTest01 {
         File file = new File("file.txt");
         try {
 
-            boolean isCreated = file.createNewFile();
+            boolean isCreated = file.createNewFile();// lança uma exeção do tipo  throws IOException, por isso necessita
+                                                    // do tratamento com o try/catch
+
             System.out.println("Criado: "+isCreated);
-            System.out.println("Caminho: "+ file.getPath());
-            System.out.println("Caminho Absoluto:"+ file.getAbsolutePath());
+            System.out.println("Path/Caminho: "+ file.getPath());
+            System.out.println("Parth Absolute:"+ file.getAbsolutePath());
             System.out.println("Se é um diretório:"+ file.isDirectory());
             System.out.println("Se é um arquivo:"+ file.isFile());
             System.out.println("Se está oculto:"+ file.isHidden());
-            System.out.println("Ùltima modificação:"+ Instant.ofEpochMilli(file.lastModified()).atZone(ZoneId.systemDefault()).toLocalDate());
+            System.out.println("Ùltima modificação:"+ Instant.ofEpochMilli(file.lastModified()).atZone(ZoneId.systemDefault()).toLocalDateTime());
 
-            boolean exists = file.exists();
 
+            boolean exists = file.exists();//verifica se o arquivo existe
             if (exists){
                 System.out.println("Deletado: "+file.delete());
             }//if

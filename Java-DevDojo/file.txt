@@ -1,0 +1,3 @@
+Escrevendo dentro do arquivo file!
+Escrevendo dentro do arquivo file!
+Escrevendo na próxima linha....
